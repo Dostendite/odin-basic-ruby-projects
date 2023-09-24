@@ -1,24 +1,13 @@
-stock_prices = [60, 14, 5, 3, 7 , 8, 60, 32, 4, 1]
+stock_prices = [44, 14, 5, 3, 7 , 8, 13, 32, 4, 21, 44]
 
 def stock_picker(prices_array)
   
-  # Buy day & Sell day
   best_deal = {
     value: 0,
     buy_day: 0,
     sell_day: 0
   }
 
-  # Loop through the array
-  # Loop again to compare the
-  # current number with the others
-
-  # If the number compared against
-  # the current number returns 
-  # higher than deal_value,
-  # add them to the hash
-
-  # Then return best_deal_days
   prices_array.each_with_index do |current_num, current_index|
     prices_array.each_with_index do |compare_num, compare_index|
 
