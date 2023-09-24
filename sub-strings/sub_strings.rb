@@ -12,23 +12,23 @@ dictionary = ["below","down","go","going","horn","how","howdy",
               "it","i","low","own","part","partner","sit"]
 
 def substrings(string, dictionary)
+  match_hash = {}
 
-  word_hash = Hash.new
-  split_string = string.split("")
-
-  dictionary.each do |word|
-    test = word.split("") - split_string
-    if test.empty?
-      if word_hash[word]
-        word_hash[word] += 1
-      else
-        word_hash[word] = 1
-      end
+  match_array = dictionary.select do |word|
+    (word.chars - string.chars).empty?
+  end
+  
+  match_array.each do |match|
+    if match_hash[match]
+      match_hash[match] += 1
+    else
+      match_hash[match] = 1
     end
   end
 
-  word_hash
-
+  match_hash
 end
 
-substrings(input_string, dictionary)
+match_hash = substrings(input_string, dictionary)
+
+p "matches = #{match_hash}"
