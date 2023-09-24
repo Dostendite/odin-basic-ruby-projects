@@ -1,4 +1,4 @@
-require 'binding.pry'
+require 'pry-byebug'
 # Implement a method #substrings that takes a 
 # word as the first argument and then an array of 
 # valid substrings (your dictionary) as the second argument. 
@@ -8,16 +8,16 @@ require 'binding.pry'
 print "Enter input string: "
 input_string = gets.chomp
 
-dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+dictionary = ["below","down","go","going","horn","how","howdy",
+              "it","i","low","own","part","partner","sit"]
 
 def substrings(string, dictionary)
 
   word_hash = Hash.new
-
-  split_string = string.split
+  split_string = string.split("")
 
   dictionary.each do |word|
-    test = word.split - split_string
+    test = word.split("") - split_string
     if test.empty?
       if word_hash[word]
         word_hash[word] += 1
