@@ -1,4 +1,4 @@
-array = [9, 3, 7, 1, 9, 2, 4, 5]
+array = [4, 1, 3, 9, 7]
 
 def bubble_sort(array)
 
@@ -9,9 +9,10 @@ def bubble_sort(array)
     array.each_with_index do |num, idx|
 
       temp = 0
+
       # If the number in array[idx]
       # is greater than the number in array[idx + 1]
-      if array[idx] > array[idx +1 1]
+      if (array[idx + 1] != nil) && (array[idx] > array[idx + 1])
         
         # array[idx] is greater
         # 1. temp = array[idx]
@@ -26,6 +27,6 @@ def bubble_sort(array)
   end
 end
 
-p array
+puts "Unsorted array: #{array}"
 bubble_sort array
-p array
+puts "> Sorted array: #{array}"
