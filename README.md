@@ -12,5 +12,5 @@ and banging my head against the wall is WAY
 less efficient, fun or productive than
 taking the time to understand the problem,
 then making a plan & writing pseudocode to
-cleanly implement it, which takes WAY less
+cleanly implement it, which takes much less
 time and is so much easier to do, as well as fun.
