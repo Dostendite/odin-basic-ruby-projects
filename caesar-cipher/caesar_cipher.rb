@@ -1,8 +1,3 @@
-print 'Enter string: '
-string = gets.chomp
-print 'Enter shift factor: '
-shift_factor = gets.chomp.to_i
-
 def caesar_cipher(string, shift_factor)
   alphabet = 'a'..'z'
   alphabet = alphabet.to_a
@@ -21,5 +16,3 @@ def caesar_cipher(string, shift_factor)
   end
   new_string.join('')
 end
-
-puts caesar_cipher(string, shift_factor)
