@@ -3,7 +3,7 @@
 1. Caesar Cipher - Working [Now with working unit tests!]
 2. Sub Strings - Working
 3. Stock Picker - Working
-4. Bubble Sort - Working
+4. Bubble Sort - Working [Now with working unit tests too!]
 
 ### Problem solving approach
 
